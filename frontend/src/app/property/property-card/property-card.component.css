@@ -1,0 +1,18 @@
+
+
+.wrapper{
+  overflow:hidden;
+}
+.card:hover img{
+  transition:scal(1.2,1.2);
+  transition-duration: 500MS;
+  transition-timing-function: ease-out;
+  height: 250px;
+  opacity: .5;
+}
+.card img{
+  transition:scal(1.2,1.2);
+  transition-duration: 500MS;
+  transition-timing-function: ease-out;
+  height: 250px;
+}
