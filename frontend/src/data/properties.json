@@ -1,57 +1,75 @@
 [
   {
   "id":1,
+  "Sellrent":1,
   "Type":"House",
   "Name":"Birla house",
-  "price":12000
+  "price":12000,
+  "Image":"prop-1"
    },
    {
     "id":2,
+    "Sellrent":1,
     "Type":"House",
     "Name":"pankaj house",
-    "price":13000
+    "price":13000,
+    "Image":"prop-2"
      },
      {
       "id":3,
+      "Sellrent":1,
       "Type":"House",
       "Name":"nitesh house",
-      "price":14000
+      "price":14000,
+      "Image":"prop-3"
        },
        {
         "id":4,
+        "Sellrent":1,
         "Type":"House",
         "Name":"salim house",
-        "price":14000
+        "price":14000,
+        "Image":"prop-4"
          },
          {
           "id":5,
+          "Sellrent":1,
           "Type":"House",
           "Name":"narender house",
-          "price":15000
+          "price":15000,
+          "Image":"prop-5"
            },
            {
             "id":6,
+            "Sellrent":2,
             "Type":"House",
             "Name":"alam house",
-            "price":12000
+            "price":12000,
+            "Image":"prop-1"
              },
              {
               "id":7,
+              "Sellrent":2,
               "Type":"House",
               "Name":"priyanka house",
-              "price":12000
+              "price":12000,
+              "Image":"prop-3"
                },
                {
                 "id":8,
+                "Sellrent":2,
                 "Type":"House",
                 "Name":"akki house",
-                "price":12000
+                "price":12000,
+                "Image":"prop-4"
                  },
                  {
                   "id":9,
+                  "Sellrent":1,
                   "Type":"House",
                   "Name":"alok house",
-                  "price":12000
+                  "price":12000,
+                  "Image":"prop-5"
                    }
 
 ]

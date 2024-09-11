@@ -1,6 +1,6 @@
 <div class="card">
   <DIV class="card-img-wrapper">
-    <img class="card-img-top" src="./assets/housedefault.png" alt=" ">
+    <img class="card-img-top" src="./assets/{{property.Image}}.png" alt=" ">
     <ul  class="list-inline text-center member-icons animate">
       <li class="list-inline-item">
         <button class="btn btn-primary" routerLink="/property-detail/{{property.id}}"><i class="far fa-edit"></i></button>
@@ -11,8 +11,8 @@
     </ul>
   </DIV>
   <div class="card-body p-2">
-  <h1>{{property.Type}}</h1>
   <h1>{{property.Name}}</h1>
+  <h1>{{property.Type}}</h1>
   <h1>{{property.price}}</h1>
 </div>
 </div>
