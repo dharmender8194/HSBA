@@ -13,7 +13,7 @@ import { IProperty } from '../IPropert.interface';
 
 )
 export class PropertyCardComponent {
-  @Input() property: any;
+  @Input() property: IProperty;
 
 
     //@Input() property: IPropertyBase;
