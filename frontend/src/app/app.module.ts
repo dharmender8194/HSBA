@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+//import { platformBrowser } from '@angular/platform-browser';
+//import { AppModule } from './app.module';
+//import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +16,11 @@ import { PropertyDetailComponent } from './property/property-detail/property-det
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
+import { AuthService } from './services/auth.service';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+//import { TabsModule } from 'ngx-bootstrap/tabs';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {path: '', component: PropertyListComponent},
@@ -34,7 +42,14 @@ const appRoutes: Routes = [
       AddPropertyComponent,
       //PropertyDetailComponent,
       UserRegisterComponent,
-      UserLoginComponent
+      UserLoginComponent,
+      //TooltipModule,
+      //TabsModule.forRoot()
+      //BrowserAnimationsModule,
+      //BsDropdownModule
+
+
+
                  ],
   imports: [
     BrowserModule,
@@ -42,11 +57,13 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //BrowserAnimationsModule
 
   ],
   providers: [
-HousingService
+HousingService,
+AuthService
 
   ],
   bootstrap: [AppComponent]

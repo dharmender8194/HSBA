@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+//import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-user-register',
@@ -30,6 +31,7 @@ export class UserRegisterComponent implements OnInit {
 
   onsumbmit(){
     console.log(this.registrationForm)
+   // alertyfy.success('Success message');
   }
 
 }
