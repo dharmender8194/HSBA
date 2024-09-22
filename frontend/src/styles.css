@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assetss/form.css';
+@import 'public/assets/tabs.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
-@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css'
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+@import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.error-block{
+  color: red;
+  }
+  .ng-valid.ng-touched{
+    border-color: red;
+  }

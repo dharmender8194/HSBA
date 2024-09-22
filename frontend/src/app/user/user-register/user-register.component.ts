@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArrayName, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { doesNotMatch } from 'node:assert';
+
 //import * as alertyfy from 'alertifyjs';
 
 @Component({
@@ -9,7 +11,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class UserRegisterComponent implements OnInit {
   registrationForm:FormGroup;
-  constructor() { }
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit() {
     this.registrationForm=new FormGroup({
@@ -22,16 +24,28 @@ export class UserRegisterComponent implements OnInit {
           });
 
   }
-  //custom validaters
-  //this.passwordmatchingvalidater
-  // passwordmatchingvalidater(fg:FormGroup):Validators{
-  //   return fg.get('password').value===fg.get('confirmpassword').value?null:
-  //   {notmatched:true};
 
+
+
+  // ,this.passwordmatchingvalidater
+
+  // passwordmatchingvalidater(fg:FormGroup):Validators{
+  //    return fg.get('passwrod')?.value===fg.get('cpassword')?.value?iprope:
+
+  //    {doesNotMatch:true};
+  // }
 
   onsumbmit(){
     console.log(this.registrationForm)
-   // alertyfy.success('Success message');
+    if(this.registrationForm.valid){
+     // alertyfy.success('Login Done ');
+    }
+
+   else
+   {
+    //alertyfy.error('Login Filed')
+   }
+
   }
 
 }

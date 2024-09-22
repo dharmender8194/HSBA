@@ -8,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-
+  loggedinUser:string;
   constructor() { }
 
   ngOnInit() {
+
+  }
+  onLogout(){
+
+  }
+  loggedin(){
 
   }
 

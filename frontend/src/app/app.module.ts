@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 //import { platformBrowser } from '@angular/platform-browser';
 //import { AppModule } from './app.module';
-//import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,10 +17,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { AuthService } from './services/auth.service';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-//import { TabsModule } from 'ngx-bootstrap/tabs';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 const appRoutes: Routes = [
   {path: '', component: PropertyListComponent},
@@ -43,14 +44,7 @@ const appRoutes: Routes = [
       //PropertyDetailComponent,
       UserRegisterComponent,
       UserLoginComponent,
-      //TooltipModule,
-      //TabsModule.forRoot()
-      //BrowserAnimationsModule,
-      //BsDropdownModule
-
-
-
-                 ],
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -58,7 +52,13 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     ReactiveFormsModule,
-    //BrowserAnimationsModule
+    TooltipModule,
+    BrowserAnimationsModule,
+    BsDropdownModule,
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot(),
+    BsDatepickerModule.forRoot()
+
 
   ],
   providers: [
